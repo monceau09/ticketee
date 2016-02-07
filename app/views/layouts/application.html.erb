@@ -13,6 +13,14 @@
 </div>
 <% end %>
 
+<title>
+  <% if content_for?(:title) %>
+    <%= yield(:title) %>
+  <% else %>
+    Ticketee
+  <% end %>
+</title>
+
 <%= yield %>
 
 </body>
